@@ -9,8 +9,6 @@
 
   "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && $HOME/.local/bin/uv sync",
 
-"postStartCommand": "echo 'This project uses uv. Use `uv add <package>` to install packages and `uv run <script>` to run scripts.' | sudo tee /etc/motd > /dev/null",
-
   "customizations": {
     "vscode": {
       "extensions": [
