@@ -1,13 +1,8 @@
 {
   "name": "Python (uv)",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
 
-  "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {},
-    "ghcr.io/astral-sh/uv:1": {}
-  },
-
-  "postCreateCommand": "uv sync",
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && source $HOME/.local/bin/env && uv sync",
 
   "customizations": {
     "vscode": {
@@ -23,4 +18,3 @@
     }
   }
 }
-
